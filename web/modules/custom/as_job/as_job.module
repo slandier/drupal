@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains as_job.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function as_job_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the as_job module.
+    case 'help.page.as_job':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Application d&#039;offres d&#039;emploi pour Aston.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

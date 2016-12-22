@@ -1,0 +1,17 @@
+
+as_job.default_controller_applicationForm:
+  path: '/job/apply/{advert}/{user}'
+  defaults:
+    _controller: '\Drupal\as_job\Controller\DefaultController::applicationForm'
+    _title: 'Formulaire de candidature.'
+  requirements:
+    _permission: 'access content'
+
+as_job.application_form:
+  path: '/as_job/form/application'
+  defaults:
+    _form: '\Drupal\as_job\Form\ApplicationForm'
+    _title: 'ApplicationForm'
+  requirements:
+    _access: 'TRUE'
+  

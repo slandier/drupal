@@ -1,0 +1,22 @@
+uuid: 00249bc5-2ca4-4524-858a-45ef56a6cbc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.advert
+  module:
+    - text
+id: node.advert.field_description
+field_name: field_description
+entity_type: node
+bundle: advert
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

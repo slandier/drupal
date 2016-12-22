@@ -1,0 +1,28 @@
+uuid: f302b8f2-215b-408d-97f1-7668076d1e0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.advert.field_applicant
+    - field.field.node.advert.field_company
+    - field.field.node.advert.field_description
+    - field.field.node.advert.field_img
+    - field.field.node.advert.field_taxo
+    - node.type.advert
+  module:
+    - user
+id: node.advert.teaser
+targetEntityType: node
+bundle: advert
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_applicant: true
+  field_company: true
+  field_description: true
+  field_img: true
+  field_taxo: true
+  langcode: true

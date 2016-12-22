@@ -1,0 +1,5 @@
+name: Offres d'emploi
+type: module
+description: Application d'offres d'emploi pour Aston.
+core: 8.x
+package: Aston

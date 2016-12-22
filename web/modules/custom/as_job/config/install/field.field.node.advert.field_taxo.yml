@@ -1,0 +1,28 @@
+uuid: afb4fcbd-ca2d-4653-96bd-a1723a7a693e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taxo
+    - node.type.advert
+    - taxonomy.vocabulary.advert_category
+id: node.advert.field_taxo
+field_name: field_taxo
+entity_type: node
+bundle: advert
+label: 'Catégorie d''annonce'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      advert_category: advert_category
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: advert_category
+field_type: entity_reference
